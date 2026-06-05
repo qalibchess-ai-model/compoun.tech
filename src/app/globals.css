@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme {
+  /* Surface */
+  --color-bg: #FFFFFF;
+  --color-bg-subtle: #FAFAFA;
+  --color-bg-muted: #F5F5F5;
+
+  /* Ink */
+  --color-ink: #0A0A0A;
+  --color-ink-secondary: #525252;
+  --color-ink-muted: #A3A3A3;
+
+  /* Line */
+  --color-line: #E5E5E5;
+  --color-line-strong: #D4D4D4;
+
+  /* Inverse (dark sections) */
+  --color-inverse-bg: #0A0A0A;
+  --color-inverse-ink: #FAFAFA;
+  --color-inverse-line: #262626;
+
+  /* Accent — yalnız 1 yerdə işlənir: focus ring, link underline hover */
+  --color-accent: #0A0A0A;
+
+  /* Fonts */
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* Animations */
+  --animate-accordion-down: accordion-down 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+  --animate-accordion-up: accordion-up 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@keyframes accordion-down {
+  from {
+    height: 0;
+  }
+  to {
+    height: var(--radix-accordion-content-height);
+  }
+}
+
+@keyframes accordion-up {
+  from {
+    height: var(--radix-accordion-content-height);
+  }
+  to {
+    height: 0;
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-bg text-ink antialiased;
+    font-feature-settings: "ss01", "cv11";
+  }
+
+  ::selection {
+    @apply bg-ink text-bg;
+  }
+}
