@@ -65,6 +65,7 @@ function deriveStack(c: CaseStudy): string[] {
     "gstone-gallery": ["Next.js", "TypeScript", "Tailwind CSS", "Figma"],
     lubristar: ["Next.js", "TypeScript", "Tailwind CSS", "Figma"],
     "play-10": ["React Native", "TypeScript", "Node.js", "Figma"],
+    "play-10-branch": ["React Native", "TypeScript", "Node.js", "Figma"],
   };
   return map[c.slug] ?? c.services;
 }

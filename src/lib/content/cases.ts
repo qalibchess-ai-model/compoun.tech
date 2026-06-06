@@ -166,6 +166,22 @@ const baseData: CaseBase[] = [
     ],
     featured: true,
   },
+  {
+    slug: "play-10-branch",
+    client: "Play 10 Branch",
+    cover: "/images/work/play10branch.png",
+    coverWidth: 260,
+    coverHeight: 251,
+    sector: "App",
+    year: "2025",
+    links: [
+      {
+        label: "Google Play",
+        href: "https://play.google.com/store/apps/details?id=com.play10.blue_planet_partner",
+      },
+    ],
+    featured: false,
+  },
 ];
 
 const localized: Record<string, Record<Locale, CaseLocalized>> = {
@@ -537,6 +553,52 @@ const localized: Record<string, Record<Locale, CaseLocalized>> = {
       },
     },
   },
+  "play-10-branch": {
+    en: {
+      title: "Play 10 Branch — a partner mobile app shipped on Android.",
+      duration: "3 months",
+      services: ["Mobile app", "UI/UX"],
+      outcome:
+        "A dedicated partner-facing mobile app built from scratch and released on Google Play.",
+      metrics: [
+        { value: "Android", label: "shipped" },
+        { value: "From scratch", label: "design + build" },
+        { value: "Live", label: "on Google Play" },
+      ],
+      body: {
+        context:
+          "Play 10 Branch needed a separate mobile app for its partners — delivered end-to-end, from design through development to store release.",
+        approach:
+          "We owned the full stack: product design, the native partner experience, API integration, and the Google Play submission process.",
+        solution:
+          "A mobile app designed and developed from the ground up around the partner workflow, and released on Android.",
+        outcome:
+          "Play 10 Branch is live on Google Play. Partners can download, install, and use the app with a purpose-built experience.",
+      },
+    },
+    az: {
+      title: "Play 10 Branch — Android üçün buraxılmış partnyor mobil tətbiqi.",
+      duration: "3 ay",
+      services: ["Mobil tətbiq", "UI/UX"],
+      outcome:
+        "Sıfırdan qurulmuş və Google Play-də buraxılmış partnyorlara yönəlmiş mobil tətbiq.",
+      metrics: [
+        { value: "Android", label: "buraxılıb" },
+        { value: "Sıfırdan", label: "dizayn + quruluş" },
+        { value: "Canlı", label: "Google Play-də" },
+      ],
+      body: {
+        context:
+          "Play 10 Branch partnyorları üçün ayrıca mobil tətbiqə ehtiyac duyurdu — dizayndan inkişafa və mağazaya buraxılışa qədər başdan sona təhvil verilmiş.",
+        approach:
+          "Bütün stekə sahib idik: məhsul dizaynı, native partnyor təcrübəsi, API inteqrasiyası və Google Play təqdim prosesi.",
+        solution:
+          "Partnyor iş axını ətrafında sıfırdan dizayn edilmiş və inkişaf etdirilmiş, Android-də buraxılmış mobil tətbiq.",
+        outcome:
+          "Play 10 Branch Google Play-də canlıdır. Partnyorlar tətbiqi yükləyə, quraşdıra və məqsədyönlü təcrübə ilə istifadə edə bilərlər.",
+      },
+    },
+  },
 };
 
 const order = [
@@ -548,6 +610,7 @@ const order = [
   "gstone-gallery",
   "lubristar",
   "play-10",
+  "play-10-branch",
 ];
 
 export function getCases(lang: Locale): CaseStudy[] {

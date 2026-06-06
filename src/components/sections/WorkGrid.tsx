@@ -93,19 +93,13 @@ export function WorkGrid({ lang, cases }: WorkGridProps) {
                 />
               </div>
 
-              <div className="mt-6 flex items-center gap-3 font-mono text-xs uppercase tracking-[0.14em] text-ink-muted">
-                <span>{c.sectorLabel}</span>
-                <span aria-hidden>·</span>
-                <span>{c.year}</span>
-                {c.url && (
-                  <>
-                    <span aria-hidden>·</span>
-                    <span>{dict.workPage.visit}</span>
-                  </>
-                )}
-              </div>
+              {c.url && (
+                <div className="mt-6 flex items-center gap-3 font-mono text-xs uppercase tracking-[0.14em] text-ink-muted">
+                  <span>{dict.workPage.visit}</span>
+                </div>
+              )}
 
-              <h3 className="mt-3 text-2xl md:text-3xl font-medium tracking-[-0.02em] text-ink">
+              <h3 className="mt-6 text-2xl md:text-3xl font-medium tracking-[-0.02em] text-ink">
                 {c.title}
               </h3>
 
