@@ -46,13 +46,13 @@ export default async function ContactPage({ params }: PageProps) {
     },
     {
       label: dict.contactPage.labels.phone,
-      value: "+994 12 555 00 00",
-      href: "tel:+994125550000",
+      value: "+994 51 345 26 86",
+      href: "tel:+994513452686",
     },
     {
       label: dict.contactPage.labels.linkedin,
-      value: "linkedin.com/company/compound",
-      href: "https://linkedin.com/company/compound",
+      value: "instagram.com/compound.tech",
+      href: "https://instagram.com/compound.tech",
     },
   ];
 

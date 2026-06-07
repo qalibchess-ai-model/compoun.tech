@@ -174,6 +174,7 @@ const baseData: CaseBase[] = [
     coverHeight: 251,
     sector: "App",
     year: "2025",
+    url: "https://play.google.com/store/apps/details?id=com.play10.blue_planet_partner",
     links: [
       {
         label: "Google Play",
