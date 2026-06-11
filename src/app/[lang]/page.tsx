@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { Hero } from "@/components/sections/Hero";
 import { FeaturedWork } from "@/components/sections/FeaturedWork";
-import { MetricsGrid } from "@/components/sections/MetricsGrid";
 import { ProcessTimeline } from "@/components/sections/ProcessTimeline";
 import { FAQ } from "@/components/sections/FAQ";
 import { FinalCTA } from "@/components/sections/FinalCTA";
@@ -37,7 +36,6 @@ export default async function HomePage({ params }: PageProps) {
     <>
       <Hero lang={locale} />
       <FeaturedWork lang={locale} />
-      <MetricsGrid lang={locale} />
       <ProcessTimeline lang={locale} />
       <FAQ lang={locale} />
       <FinalCTA lang={locale} />

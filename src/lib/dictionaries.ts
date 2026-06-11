@@ -54,7 +54,6 @@ export interface Dictionary {
   };
   finalCta: {
     title: string;
-    subtitle: string;
     cta: string;
     contacts: {
       instagram: string;
@@ -247,8 +246,6 @@ const az: Dictionary = {
   },
   finalCta: {
     title: "Böyüməyə hazırsan?",
-    subtitle:
-      "Rübdə 4-6 müştəri ilə işləyirik. Ciddi nəsə qurursansa, danışaq.",
     cta: "Layihəyə başla",
     contacts: {
       instagram: "Instagram",
@@ -483,8 +480,6 @@ const en: Dictionary = {
   },
   finalCta: {
     title: "Built to compound?",
-    subtitle:
-      "We work with 4-6 clients per quarter. If you're building something serious, let's talk.",
     cta: "Start a project",
     contacts: {
       instagram: "Instagram",

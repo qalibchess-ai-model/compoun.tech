@@ -34,10 +34,6 @@ export function FinalCTA({ lang }: FinalCTAProps) {
           {dict.finalCta.title}
         </h2>
 
-        <p className="mt-10 max-w-xl text-lg md:text-xl text-inverse-ink/60 leading-[1.55]">
-          {dict.finalCta.subtitle}
-        </p>
-
         <div className="mt-12">
           <Button href={localizedPath(lang, "/contact")} variant="inverse" arrow>
             {dict.finalCta.cta}
